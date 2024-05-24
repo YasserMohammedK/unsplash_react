@@ -1,0 +1,55 @@
+:root {
+  --default-spacing: 10px;
+  --primary-color: #7676d7;
+  text-align: center;
+}
+
+body {
+  background-color: #0a0a3f; /* Dark blue background */
+}
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  color: #7676d7;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-section .search-input {
+  min-width: 500px;
+}
+
+.images {
+  margin-top: var(--medium-margin);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: var(--default-spacing);
+}
+
+.images .image {
+  width: 200px;
+  height: 200px;
+  justify-self: center;
+  align-self: center;
+  margin-left: 2rem;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.images .image:hover {
+  transform: translateY(-3px);
+}
